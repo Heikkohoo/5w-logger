@@ -2,6 +2,8 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
+    "types": ["node", "mocha"],
+    "rootDir": "./src",
     "outDir": "dist",
     "alwaysStrict": true,
     "strictNullChecks": true,
