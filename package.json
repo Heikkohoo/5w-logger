@@ -1,6 +1,6 @@
 {
   "name": "5w-logger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "5w logger library",
   "main": "dist/5w-logger.js",
   "author": "Juhani Hakosalo",
@@ -22,15 +22,24 @@
     "@eslint/js": "^10.0.1",
     "@types/chai": "5.2.3",
     "@types/mocha": "10.0.10",
-    "@types/node": "25.9.1",
+    "@types/node": "26.4.0",
     "chai": "6.2.2",
-    "globals": "^17.4.0",
-    "mocha": "11.7.6",
+    "globals": "^17.11.0",
+    "mocha": "11.8.0",
     "ts-node": "10.9.2",
     "typescript": "6.0.3",
-    "typescript-eslint": "^8.59.2",
-    "@typescript-eslint/parser": "^8.59.2",
-    "@typescript-eslint/eslint-plugin": "^8.59.2",
+    "typescript-eslint": "^8.68.0",
+    "@typescript-eslint/parser": "^8.68.0",
+    "@typescript-eslint/eslint-plugin": "^8.68.0",
     "eslint-plugin-functional": "^10.0.0"
+  },
+  "x-overrides-note": "Keep these overrides while Mocha 11.x is in use; remove after upgrading to Mocha 12 stable or newer.",
+  "x-deepmerge-ts-override-note": "Use patched deepmerge-ts 8.0.2 to avoid downgrading eslint-plugin-functional.",
+  "overrides": {
+    "deepmerge-ts": "8.0.2",
+    "mocha": {
+      "diff": "8.0.4",
+      "serialize-javascript": "7.0.7"
+    }
   }
 }
