@@ -1,6 +1,6 @@
 {
   "name": "5w-logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "5w logger library",
   "main": "dist/5w-logger.js",
   "author": "Juhani Hakosalo",
