@@ -16,26 +16,27 @@
     "test": "mocha --require ts-node/register src/*.spec.ts src/**/*.spec.ts"
   },
   "dependencies": {
-    "uuid": "14.0.0"
+    "uuid": "14.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/chai": "5.2.3",
     "@types/mocha": "10.0.10",
-    "@types/node": "26.4.0",
-    "chai": "6.2.2",
-    "globals": "^17.11.0",
+    "@types/node": "26.6.4",
+    "chai": "6.3.0",
+    "globals": "^17.12.0",
     "mocha": "11.8.0",
     "ts-node": "10.9.2",
     "typescript": "6.0.3",
     "typescript-eslint": "^8.68.0",
     "@typescript-eslint/parser": "^8.68.0",
     "@typescript-eslint/eslint-plugin": "^8.68.0",
-    "eslint-plugin-functional": "^10.0.0"
+    "eslint-plugin-functional": "^10.0.1"
   },
   "x-overrides-note": "Keep these overrides while Mocha 11.x is in use; remove after upgrading to Mocha 12 stable or newer.",
   "x-deepmerge-ts-override-note": "Use patched deepmerge-ts 8.0.2 to avoid downgrading eslint-plugin-functional.",
   "overrides": {
+    "brace-expansion@>=4.0.0 <5.0.12": "5.0.12",
     "deepmerge-ts": "8.0.2",
     "mocha": {
       "diff": "8.0.4",
